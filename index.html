@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Enquiry Chatbot</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <div class="page">
+    <header class="hero">
+      <h1>🎓 ABC College of Engineering</h1>
+      <p>Ask our virtual assistant about admissions, courses, fees, placements &amp; more.</p>
+    </header>
+
+    <div class="chat-container">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <span class="bot-avatar">🤖</span>
+          <div>
+            <div class="bot-name">Campus Assistant</div>
+            <div class="bot-status"><span class="dot"></span> Online</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="chat-window" class="chat-window">
+        <!-- messages injected here -->
+      </div>
+
+      <div class="quick-replies" id="quick-replies">
+        <button class="chip" data-msg="What is the admission process?">Admission Process</button>
+        <button class="chip" data-msg="What is the fee for Computer Engineering?">Fees</button>
+        <button class="chip" data-msg="What are the placement stats?">Placements</button>
+        <button class="chip" data-msg="Is hostel facility available?">Hostel</button>
+        <button class="chip" data-msg="I want to share my details">Talk to Admissions</button>
+      </div>
+
+      <form id="chat-form" class="chat-input-row">
+        <input type="text" id="user-input" placeholder="Type your question..." autocomplete="off" required>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <footer class="footer">Final Year Project — AI-Based College Enquiry Chatbot</footer>
+  </div>
+
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

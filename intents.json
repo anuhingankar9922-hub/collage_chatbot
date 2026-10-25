@@ -1,0 +1,150 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey there", "good morning", "good evening", "is anyone available to help"],
+      "responses": [
+        "Hello! Welcome to our college enquiry assistant. I can help you with admissions, courses, fees, hostel, placements, and more. What would you like to know?",
+        "Hi there! I'm here to answer your questions about admissions, courses, fees, and campus life. How can I assist you today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "thanks, bye", "see you later", "that's all I needed", "talk to you later"],
+      "responses": [
+        "Thank you for reaching out! If you have more questions later, feel free to come back anytime. Wishing you the best with your college journey!",
+        "Goodbye! Don't hesitate to return if anything else comes to mind. Good luck!"
+      ]
+    },
+    {
+      "tag": "admission_process",
+      "patterns": ["How do I apply for admission?", "What is the admission procedure?", "steps to get admission in this college", "how can I enroll for the next academic year", "what is the application process", "guide me through the admission steps"],
+      "responses": [
+        "Our admission process involves four steps: 1) Fill out the online application form on the college portal, 2) Upload required documents (10th/12th marksheets, entrance exam scorecard, ID proof), 3) Pay the application fee, and 4) Attend counseling/document verification as per your merit rank. Would you like help getting started, or shall I connect you with our admissions team?",
+        "To apply, visit our admissions portal, complete the online form, and submit the necessary documents along with your entrance exam scorecard. Shortlisted candidates are called for counseling based on merit. I can note your details for a personal callback if you'd like."
+      ]
+    },
+    {
+      "tag": "eligibility_criteria",
+      "patterns": ["what is the eligibility for engineering admission", "minimum marks required for admission", "am I eligible to apply", "eligibility criteria for BE/BTech", "what percentage do I need in 12th", "entry requirements for this course"],
+      "responses": [
+        "For undergraduate engineering programs, candidates must have passed 10+2 with Physics, Chemistry, and Mathematics (PCM) securing a minimum of 45% aggregate (40% for reserved categories), along with a valid entrance exam score. Specific courses may have additional criteria — let me know which course you're interested in.",
+        "Eligibility typically requires 12th standard completion with PCM and a minimum aggregate percentage, plus a qualifying entrance exam rank. Requirements can vary by department — tell me the specific course and I'll share exact details."
+      ]
+    },
+    {
+      "tag": "fee_query",
+      "patterns": ["what is the fee structure", "how much does the course cost", "tuition fees for computer engineering", "total fees for the 4 year program", "is there any hidden fee", "fee for mechanical engineering branch"],
+      "responses": ["DYNAMIC_FEE_LOOKUP"]
+    },
+    {
+      "tag": "scholarships",
+      "patterns": ["are there any scholarships available", "financial aid for students", "scholarship for merit students", "do you offer fee waivers", "government scholarship eligibility", "how can I apply for a scholarship"],
+      "responses": [
+        "We offer merit-based scholarships for top rank holders, government scholarships for eligible categories, and need-based financial aid. Applications typically open after admission confirmation through the student portal. Would you like details on a specific category?",
+        "Scholarship options include merit scholarships, government-sponsored scholarships, and sports/extracurricular quota scholarships. I can connect you with our scholarship cell if you share your details."
+      ]
+    },
+    {
+      "tag": "courses_offered",
+      "patterns": ["what courses do you offer", "list of branches available", "which engineering streams are available", "do you have computer science branch", "what programs can I choose from", "tell me about the departments"],
+      "responses": [
+        "We offer undergraduate (B.E./B.Tech) programs in Computer Engineering, Information Technology, Mechanical Engineering, and Civil Engineering. Would you like detailed information about any particular branch?",
+        "Our academic programs span Computer Engineering, IT, Mechanical, and Civil Engineering at the undergraduate level. Let me know which one interests you for more details."
+      ]
+    },
+    {
+      "tag": "placements",
+      "patterns": ["what is the placement percentage", "average package offered last year", "which companies visit for recruitment", "placement stats for computer engineering", "highest package given to students", "how good is the placement record"],
+      "responses": ["DYNAMIC_PLACEMENT_LOOKUP"]
+    },
+    {
+      "tag": "hostel_facilities",
+      "patterns": ["do you provide hostel facility", "is hostel accommodation available", "hostel fees and rules", "separate hostel for girls and boys", "what facilities are there in the hostel", "how far is the hostel from campus"],
+      "responses": [
+        "Yes, we provide separate hostel facilities for boys and girls with furnished rooms, Wi-Fi, a mess with nutritious meals, 24/7 security, and common recreational areas. Hostel fees are charged separately from tuition. Would you like the current fee structure?",
+        "Our on-campus hostels offer Wi-Fi, laundry, a dining mess, study rooms, and round-the-clock warden supervision. Allotment is done after admission confirmation."
+      ]
+    },
+    {
+      "tag": "campus_facilities",
+      "patterns": ["what facilities does the campus have", "tell me about the infrastructure", "is there a sports ground", "does the college have a gym", "what labs and equipment are available", "how is the campus environment"],
+      "responses": [
+        "Our campus includes well-equipped labs, a central library with digital resources, Wi-Fi-enabled classrooms, a sports complex, a gymnasium, an auditorium, and a cafeteria. Is there a specific facility you'd like more details about?",
+        "The campus offers modern labs for each department, a spacious library, sports and fitness facilities, seminar halls, and a canteen designed for a balanced student life."
+      ]
+    },
+    {
+      "tag": "contact_info",
+      "patterns": ["what is your contact number", "how can I contact the college", "college email address", "where is the college located", "give me the admission office contact", "how do I reach the campus"],
+      "responses": [
+        "You can reach our Admissions Office at admissions@college.edu.in or call +91-XXXXXXXXXX (Mon-Sat, 9 AM - 5 PM). Would you like me to note your contact details so our team can reach out to you directly?",
+        "For any queries, contact us at info@college.edu.in or +91-XXXXXXXXXX. If you'd like a callback instead, share your name and phone number."
+      ]
+    },
+    {
+      "tag": "entrance_exam",
+      "patterns": ["which entrance exam is required", "do I need to give CET or JEE", "is there a college level entrance test", "what exam score is needed for admission", "entrance exam pattern and syllabus", "when is the entrance exam conducted"],
+      "responses": [
+        "Admission to our undergraduate engineering programs is primarily based on MHT-CET or JEE Main scores. A small percentage of seats are available through direct/management quota. Would you like the latest exam schedule?",
+        "We accept scores from MHT-CET and JEE Main for merit-based admission. Let me know if you'd like guidance on the counseling process."
+      ]
+    },
+    {
+      "tag": "faculty_info",
+      "patterns": ["tell me about the faculty", "how qualified are the professors", "faculty to student ratio", "who heads the computer engineering department", "do faculty have PhDs", "is the teaching staff experienced"],
+      "responses": [
+        "Our faculty comprises highly qualified educators, many holding PhDs and Master's degrees, with substantial industry and research experience. We maintain a healthy student-faculty ratio for personalized attention.",
+        "Each department is led by experienced faculty with strong academic and research backgrounds, and regular exposure to industry collaborations and training programs."
+      ]
+    },
+    {
+      "tag": "library_facilities",
+      "patterns": ["does the college have a library", "how many books are in the library", "is there access to e-journals", "library timings", "can I access digital resources", "what is available in the library"],
+      "responses": [
+        "Our central library houses a large collection of textbooks, reference books, and journals, along with access to digital libraries like NPTEL and IEEE. The library is open all working days with extended hours during exams.",
+        "The library offers both physical and digital resources, including e-books and online databases accessible from the campus network, plus reading rooms for group study."
+      ]
+    },
+    {
+      "tag": "transport_facilities",
+      "patterns": ["is bus facility available", "does the college provide transport", "how do students commute to campus", "bus routes and fees", "is transportation safe", "college bus timings"],
+      "responses": [
+        "Yes, we provide bus transportation covering major routes across the city, with fees charged separately based on the route/distance. Would you like to know if a bus route covers your area?",
+        "Our college operates buses on multiple routes for student convenience, with fee slabs based on distance from campus."
+      ]
+    },
+    {
+      "tag": "documents_required",
+      "patterns": ["what documents are needed for admission", "list of certificates required", "do I need to bring original documents", "documents for scholarship application", "what papers should I carry for verification", "required documents checklist"],
+      "responses": [
+        "For admission, you'll typically need: 10th and 12th marksheets, entrance exam scorecard, transfer certificate, category certificate (if applicable), income certificate (for scholarships), Aadhaar card, and passport-size photographs. Would you like a downloadable checklist?",
+        "Key documents include your academic marksheets, entrance exam scorecard, ID proof, category certificate (if applicable), and recent photographs. Let me know your category and I can give you the exact list."
+      ]
+    },
+    {
+      "tag": "application_status",
+      "patterns": ["how do I check my application status", "has my application been approved", "track my admission application", "when will I know if I am selected", "my application seems stuck, what do I do", "status of my submitted form"],
+      "responses": [
+        "You can check your application status by logging into the admissions portal with your registered email/application ID. If your status hasn't changed in over 5 working days, I can help connect you with our admissions support team.",
+        "Application status is tracked through your candidate dashboard on our portal. If you're facing issues, please share your application ID and contact details."
+      ]
+    },
+    {
+      "tag": "provide_lead_info",
+      "patterns": ["I want to share my details", "please contact me regarding admission", "here is my name and number", "I would like a callback", "register my interest for computer engineering", "can someone from admissions call me"],
+      "responses": [
+        "Sure! Please share your Name, Email, Phone Number, and Preferred Course, and our admissions counselor will reach out to you within 24 hours.",
+        "I'd be happy to note that down. Could you provide your Name, Email ID, Phone Number, and preferred course?"
+      ]
+    },
+    {
+      "tag": "out_of_scope",
+      "patterns": ["what is the weather today", "tell me a joke", "who is the prime minister", "can you book a flight for me", "what is the meaning of life", "play some music"],
+      "responses": [
+        "I'm designed specifically to help with college-related queries — admissions, courses, fees, hostel, placements, and campus facilities. Could you rephrase your question around one of these topics?",
+        "That's outside what I can help with right now, since I'm focused on college enquiries. Feel free to ask me anything about admissions, fees, courses, or campus facilities."
+      ]
+    }
+  ]
+}
